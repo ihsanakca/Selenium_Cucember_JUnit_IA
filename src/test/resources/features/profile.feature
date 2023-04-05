@@ -40,11 +40,11 @@ Feature: Profile Page Tests
     When The user navigate to profile tab: "Add Education"
     Then The user should be able to see "Add Education" button
     When The user fill the form with following list
-    |Ankara University|
-    |Bachelor|
-    |Engineering|
-    |08052020|
-    |11122022|
-    |Hard program|
+      | Ankara University |
+      | Bachelor          |
+      | Engineering       |
+      | 08052020          |
+      | 11122022          |
+      | Hard program      |
     Then The user should see added record with: "Ankara University"
     And The user should be able to delete last added record with : "Ankara University"
