@@ -15,7 +15,7 @@ public class Hooks {
     @Before
     public void setUp(){
         Driver.get().manage().window().setPosition(new Point(-1000, 0));
-        Driver.get().manage().window().maximize();
+       // Driver.get().manage().window().maximize();
         Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @After

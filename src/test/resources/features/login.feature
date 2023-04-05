@@ -12,11 +12,11 @@ Feature: Login Functionality
     When The user type in valid credentials: "sgezer@gmail.com" and "sg12345678"
     Then The user should be able to see userName: "Selim Gezer"
 
-
+  @sss
   Scenario:Login As ramanzi
     Given The user is on the login page
     When The user type in valid credentials: "Ramanzi@test.com" and "Test123456"
-    Then The user should be able to see userName: "Mansimmo"
+    Then The user should be able to see userName: "Mansimmo61"
 
 
   Scenario:Login As ramanzi with map
@@ -26,7 +26,7 @@ Feature: Login Functionality
       | pass     | Test123456       |
       | name     | Mansimmo         |
 
-
+  @wip
   Scenario:Login As ramanzi with list
     Given The user is on the login page
     Then The user type in valid credentials via list and verify success login
@@ -34,7 +34,7 @@ Feature: Login Functionality
       | Test123456       |
       | Mansimmo         |
 
-  @wip
+
   Scenario Outline: Login with different user "<userName>" via scenario outline
     Given The user is on the login page
     When The user type in valid credentials: "<userEmail>" and "<password>"
