@@ -26,15 +26,15 @@ Feature: Login Functionality
       | pass     | Test123456       |
       | name     | Mansimmo         |
 
-
+  @wip
   Scenario:Login As ramanzi with list
     Given The user is on the login page
     Then The user type in valid credentials via list and verify success login
       | Ramanzi@test.com |
       | Test123456       |
-      | Mansimmo         |
+      | Mansimmo61         |
 
-  @wip
+
   Scenario Outline: Login with different user "<userName>" via scenario outline
     Given The user is on the login page
     When The user type in valid credentials: "<userEmail>" and "<password>"

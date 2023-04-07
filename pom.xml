@@ -44,10 +44,12 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <runOrder>Alphabetical</runOrder>
+
                     <includes>
                         <include>**/*CukesRunner.java</include>
                         <include>**/*FailedTestRunner.java</include>
                     </includes>
+                    <!-- <rerunFailingTestsCount>1</rerunFailingTestsCount> -->
                 </configuration>
             </plugin>
             <plugin>
