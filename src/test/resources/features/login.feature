@@ -32,7 +32,7 @@ Feature: Login Functionality
     Then The user type in valid credentials via list and verify success login
       | Ramanzi@test.com |
       | Test123456       |
-      | Mansimmo61         |
+      | Mansimmo         |
 
 
   Scenario Outline: Login with different user "<userName>" via scenario outline
